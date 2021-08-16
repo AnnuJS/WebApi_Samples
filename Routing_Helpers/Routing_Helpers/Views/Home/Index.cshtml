@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Even and Odd Numbers</h1>
+    @for (int i = 1; i < 10; i++)
+    {
+        <div>
+            @if (i % 2 == 0)
+            {
+                <p>Even Number: @i</p>
+            }
+            else
+            {
+                <p>Odd Number: @i</p>
+            }
+        </div>
+    }
+</div>
